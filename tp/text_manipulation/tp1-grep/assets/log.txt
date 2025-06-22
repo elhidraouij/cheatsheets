@@ -1,0 +1,11 @@
+[INFO] 2025-06-20 09:00:01 - Web service started
+[INFO] 2025-06-20 09:00:05 - Configuration loaded
+[ERROR] 2025-06-20 09:00:10 - Failed to connect to the database
+[WARNING] 2025-06-20 09:00:15 - High memory usage detected
+[INFO] 2025-06-20 09:01:00 - Incoming request received
+[ERROR] 2025-06-20 09:01:10 - Timeout while sending response
+[DEBUG] 2025-06-20 09:01:30 - Request handled in 120ms
+[INFO] 2025-06-20 09:02:00 - Request completed successfully
+[WARNING] 2025-06-20 09:02:10 - Attempting to reconnect
+[ERROR] 2025-06-20 09:02:15 - Missing data in JSON response
+[INFO] 2025-06-20 09:03:00 - Final response sent
