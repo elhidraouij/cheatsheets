@@ -15,3 +15,8 @@ Most useful kernel parameters are :
 - `quiet` - Hides boot messages
 - `vga`
 - `root` - Sets the root partition. Ie, `root=/dev/sda3`
+- `rootflags`
+- `ro`
+- `rw`
+
+Those parameters must be added to the file `/etc/default/grub` on the line `GRUB_CMDLINE_LINUX`. And then type `grub-mkconfig -o /boot/grub/grub.cfg`.
