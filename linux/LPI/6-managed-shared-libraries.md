@@ -10,9 +10,9 @@ _Shared (or dynamic) libraries_, the linker takes care that the program referenc
 
 ### Libraries convention
 
-_Shared libraries_ follow the `lib[name].so.[version]` pattern.
+_Shared libraries_ follow the `[lib_name].so.[version]` pattern.
 
-_Static libraries_ follow the `lib[name].a` pattern
+_Static libraries_ follow the `[lib_name].a` pattern
 
 Common locations for shared libraries :
 - `/lib`
@@ -21,3 +21,14 @@ Common locations for shared libraries :
 - `/usr/lib`
 - `/usr/local/lib`
 
+### Dynamic linker
+
+The references are resolved by the dynamic linker `ld.so` or `ld-linux.so`. To do so, it searches in directories specified by the _library path_ in the `/etc/ld.so.conf` file or `/etc/ld.so.conf.d` directory.
+
+The `*.conf` file in `/etc/ls.so.conf.d/*.conf` include the absolute path to the shared library directories.
+
+`sudo ldconfig -v`, to list the library version numbers and the link created
+
+The `LD_LIBRARY_PATH` environment variable can be used to add new paths to shared libraries with `export LD_LIBRARY_PATH=/usr/local/mylib:/usr/local/other`.
+
+To make the changes persistent, then write it in `/etc/bash.bashrc` or `~/.bashrc`.
